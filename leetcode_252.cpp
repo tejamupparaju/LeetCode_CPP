@@ -30,9 +30,7 @@ public:
         
         std::vector<Interval>::iterator iter;
         Interval current = intervals[0];
-        std::cout<< current.start << std::endl;
-        std::cout << current.end << std::endl;
-        
+
         for(iter=intervals.begin()+1; iter != intervals.end(); iter++){
             if (current.end > iter->start) return false;
             
